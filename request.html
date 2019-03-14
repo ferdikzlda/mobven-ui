@@ -24,7 +24,7 @@
                     <div class="subscription">
                         <div class="subscription-header">
                             <span class="title">Abonelik Bilgileri</span>
-                            <span class="sub-title"><span class="thin-font">Sayın</span> Emre Balkanlı</span>
+                            <span class="sub-title pull-right"><span class="thin-font">Sayın</span> Emre Balkanlı</span>
                         </div>
                         <div class="row">
                             <div class="col-md-4">
@@ -66,7 +66,8 @@
                             <div class="col-md-8 p-r-0">
                                 <div class="custom-input-group">
                                     <div class="md-input">
-                                        <input data-btn="#daskSearch" data-hide-icon="#daskCheckIcon" class="md-form-control search-input" required="" type="text">
+                                        <input data-btn="#daskSearch" data-hide-icon="#daskCheckIcon"
+                                            class="md-form-control search-input" required="" type="text">
                                         <label>Dask Numarası</label>
                                     </div>
                                     <div class="custom-input-group-icon">
@@ -81,6 +82,190 @@
                         </div>
 
                     </div>
+                    <div class="subscription">
+                        <div class="subscription-header">
+                            <span class="yellow-circle-number">2</span>
+                            <span class="title">Güvence Bedeli</span>
+                            <img id="daskCheckIcon" class="check-icon" src="assets/img/circled-checkmark-icon.svg">
+                        </div>
+                        <div id="daskNumberImg" class="text-center p-t-b-15 dask-number">
+                            <img src="assets/img/deposit-value.svg" />
+                        </div>
+                        <h1 class="dask-description">Görevli tedarik şirketi ile sözleşme imzalayan tüketicinin Güvence
+                            Bedeli, tesisin veya kullanım yerinin gücü dikkate alınarak, abone grupları itibariyle kW
+                            başına belirlenen birim bedel üzerinden hesaplanmaktadır.</h1>
+                        <div class="alert-box">
+                            <img class="alert-icon" src="./assets/img/alert-icon.svg" />
+                            <div class="alert-description"><span class="bold-font">180,00 TL</span> güvence bedeli
+                                tutarı eşit <span class="bold-font">iki taksit</span> halinde <span
+                                    class="bold-font">ilk ve ikinci</span>ilk ve ikinci faturanıza yansıtılacaktır.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-4">
+                                <button type="button" class="disable-btn active">DEVAM</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="subscription">
+                        <div class="subscription-header">
+                            <span class="yellow-circle-number">3</span>
+                            <span class="title">İmza Yönetimi</span>
+                            <img id="daskCheckIcon" class="check-icon" src="assets/img/circled-checkmark-icon.svg">
+                        </div>
+                        <div id="daskNumberImg" class="text-center p-t-b-15 dask-number">
+                            <img src="assets/img/signature.svg" />
+                        </div>
+                        <h1 class="dask-description">Abonelik sözleşmesi mutlaka ıslak imza ile tamamlanmalıdır.
+                            Başvurunuz sonrası kurye veya hizmet noktalarımızdan randevu alarak ilgili sözleşmeyi
+                            tamamlayabilirsin.</h1>
+                        <div class="section-line"></div>
+                        <h1 class="signature-sub-title">İmza yönteminizi seçin.</h1>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="signature-item">
+                                    <img src="assets/img/courier.svg" />
+                                    <h1 class="signature-sub-title">Kurye Gelsin</h1>
+                                    <span class="signature-description">
+                                        24 saat içinde sizinle iletişime geçilecektir. Teslimi sadece başvuru sahibi
+                                        yapabilir. Kurye bedeli* ilk faturanıza yansıtılacaktır.
+                                        * Ayesaş 10,84 TL, Başkent ve Toroslar 11,41TL
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="signature-item">
+                                    <img src="assets/img/appointment.svg" />
+                                    <h1 class="signature-sub-title">Randevu Alacağım</h1>
+                                    <span class="signature-description">
+                                        Sözleşmenin ıslak imza işlemi başvuru sahibi tarafından 5 iş günü içinde
+                                        tamamlanmalıdır. İşlemin sonunda randevu alabileceğiniz sayfaya
+                                        yönlendirileceksiniz.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h1 class="signature-sub-title">Sözleşmenin Yapılacağı Adres</h1>
+                            <h2 class="address-text">BARBAROS MAH. ARDIÇ SOK. NO: 5 M/21 MERKEZ ATAŞEHİR İSTANBUL</h2>
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-4">
+                                    <button type="button" class="secondary-btn">ADRESİ DEĞİŞTİR</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selected-signature">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="assets/img/courier.svg" />
+                                </div>
+                                <div class="col-md-10">
+                                    <h1 class="signature-sub-title">Kurye Gelsin</h1>
+                                    <span class="signature-description m-b-16">
+                                        <span class="bold-font">24 saat</span> içinde sizinle iletişime geçilecektir.
+                                        Teslimi sadece <span class="bold-font">başvuru sahibi</span> yapabilir. Kurye
+                                        bedeli* ilk faturanıza yansıtılacaktır.
+                                    </span>
+                                    <span class="signature-description">
+                                        * Ayesaş 10,84 TL, Başkent ve Toroslar 11,41TL
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="section-line"></div>
+                            <h1 class="signature-sub-title">Kuryenin imza için geleceği adresi belirleyin.</h1>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="address-box">
+                                        <h1>Kuryenin Geleceği Adres</h1>
+                                        <span>BARBAROS MAH. ARDIÇ SOK. NO: 5 M/21 MERKEZ ATAŞEHİR İSTANBUL</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="address-box text-center">
+                                        <h1 class="address-box-btn">ADRESİ DEĞİŞTİR</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row m-b-16">
+                                <div class="col-md-12">
+                                    <div class="custom-input-group">
+                                        <div class="md-input md-textarea">
+                                            <textarea rows="4" data-btn="#addressSave"
+                                                class="md-form-control search-input custom-textarea" required=""
+                                                type="text"></textarea>
+                                            <label>Adres</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-2">
+                                    <button type="button" class="secondary-btn border-none">VAZGEÇ</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button id="addressSave" type="button" class="disable-btn">KAYDET</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selected-signature">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="assets/img/appointment.svg" />
+                                </div>
+                                <div class="col-md-10">
+                                    <h1 class="signature-sub-title">Randevu Alacağım</h1>
+                                    <span class="signature-description m-b-16">
+                                        Sözleşmenin ıslak imza işlemi <span class="bold-font">başvuru sahibi</span>
+                                        tarafından <span class="bold-font">5 iş günü</span> içinde
+                                        tamamlanmalıdır. İşlemin sonunda randevu alabileceğiniz sayfaya
+                                        yönlendirileceksiniz.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="section-line"></div>
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-4 m-t-24">
+                                    <button type="button" class="disable-btn active">DEVAM</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="subscription">
+                            <div class="subscription-header">
+                                <span class="yellow-circle-number">4</span>
+                                <span class="title">İletişim Ayarları</span>
+                                <img id="daskCheckIcon" class="check-icon" src="assets/img/circled-checkmark-icon.svg">
+                            </div>
+                            <div id="daskNumberImg" class="text-center p-t-b-15 dask-number">
+                                <img src="assets/img/communication-settings.svg" />
+                            </div>
+                            <div>
+                                    <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox" value="">
+                                              Option one is this and that&mdash;be sure to include why it's great
+                                            </label>
+                                          </div>
+                            </div>
+                            <h1 class="dask-description">Görevli tedarik şirketi ile sözleşme imzalayan tüketicinin Güvence
+                                Bedeli, tesisin veya kullanım yerinin gücü dikkate alınarak, abone grupları itibariyle kW
+                                başına belirlenen birim bedel üzerinden hesaplanmaktadır.</h1>
+                            <div class="alert-box">
+                                <img class="alert-icon" src="./assets/img/alert-icon.svg" />
+                                <div class="alert-description"><span class="bold-font">180,00 TL</span> güvence bedeli
+                                    tutarı eşit <span class="bold-font">iki taksit</span> halinde <span
+                                        class="bold-font">ilk ve ikinci</span>ilk ve ikinci faturanıza yansıtılacaktır.
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-4">
+                                    <button type="button" class="disable-btn active">DEVAM</button>
+                                </div>
+                            </div>
+    
+                        </div>
                 </div>
             </div>
         </div>

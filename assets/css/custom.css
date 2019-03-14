@@ -68,6 +68,14 @@
     background-color: #ffffff;
 }
 
+.custom-textarea {
+    resize: none;
+}
+
+.custom-textarea:focus {
+    outline: none;
+}
+
 .custom-input-group .md-input {
     width: calc(100% - 30px);
     display: inline-block;
@@ -75,6 +83,10 @@
     font-size: 16px;
     height: 24px;
     border: none;
+}
+
+.custom-input-group .md-input.md-textarea {
+    height: auto;
 }
 
 .custom-input-group .md-input input:focus {
@@ -130,6 +142,10 @@
     color: #7c86a2;
 }
 
+.border-none {
+    border: none!important;
+}
+
 .disable-btn {
     border-radius: 4px;
     background-color: #e5ebf0;
@@ -145,6 +161,23 @@
     text-align: center;
     color: #a9b3bb;
     border: none;
+}
+
+.secondary-btn {
+    border-radius: 4px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 56px;
+    font-family: Hind;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #475f70;
+    border: 1px solid #475f70;
 }
 
 .disable-btn.active {
@@ -274,7 +307,6 @@
     font-family: Hind;
     font-size: 16px;
     font-weight: 500;
-    float: right;
     color: #000000;
     line-height: 32px;
 }
@@ -289,6 +321,10 @@
 
 .thin-font {
     font-weight: 300;
+}
+
+.bold-font {
+    font-weight: 600;
 }
 
 .section-line {
@@ -320,25 +356,115 @@
     color: #7c86a2;
 }
 
-.check-icon{
+.check-icon {
     float: right;
     display: none;
 }
-.check-icon.show{
+
+.check-icon.show {
     display: inline;
 }
-.dask-number{
+
+.dask-number {
     display: block;
 }
-.dask-number.hide{
+
+.dask-number.hide {
     display: none;
 }
+
+.signature-item {
+    text-align: center;
+    border-radius: 4px;
+    border: solid 1px #e5ebf0;
+    padding: 32px 24px;
+    cursor: pointer;
+}
+
+.signature-item:hover {
+    background-color: #ffd522;
+}
+
+.signature-item img {
+    width: 64px;
+    height: 64px;
+}
+
+.signature-sub-title {
+    font-family: Hind;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #000000;
+    padding: 15px 0 5px 0;
+    line-height: 24px;
+    margin: 0;
+}
+
+.signature-description {
+    font-family: Hind;
+    font-size: 14px;
+    text-align: center;
+    color: #7c86a2;
+    display: block;
+}
+
+.selected-signature img {
+    width: 64px;
+    height: 120px;
+}
+
+.address-box {
+    padding: 32px 24px;
+    border-radius: 4px;
+    border: solid 1px #e5ebf0;
+    margin-top: 10px;
+    height: 164px;
+    cursor: pointer;
+}
+
+.address-box:hover {
+    background-color: #ffd522;
+}
+
+.address-box h1 {
+    font-family: Hind;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    margin: 0 0 10px 0;
+}
+
+.address-box span {
+    font-family: Hind;
+    font-size: 16px;
+    line-height: 1.38;
+    color: #000000;
+}
+
+.address-box-btn {
+    line-height: 100px;
+}
+
+.address-text {
+    font-family: Hind;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
 .p-r-0 {
     padding-right: 0px;
 }
 
 .m-t-24 {
     margin-top: 24px;
+}
+
+.m-b-16 {
+    margin-bottom: 16px;
 }
 
 .p-t-b-15 {

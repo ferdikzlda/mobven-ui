@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="112" height="112" viewBox="0 0 112 112">
+    <defs>
+        <path id="a" d="M0 112h111.996V.004H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" d="M0 111.996h111.996V0H0z"/>
+        <g transform="translate(0 -.004)">
+            <path fill="#FFF1BA" d="M55.998 15.702c22.257 0 40.3 18.043 40.3 40.3 0 22.257-18.043 40.3-40.3 40.3-22.257 0-40.3-18.043-40.3-40.3 0-22.257 18.043-40.3 40.3-40.3"/>
+            <path stroke="#685723" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5" d="M77.398 24.202v22M77.398 70.702v18.5h-47.6"/>
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <path fill="#FFF" d="M28.498 88.002h47.7v-65h-47.7z" mask="url(#b)"/>
+            <path fill="#E9E6DA" d="M67.598 46.602h-32.2c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h32.1c.5 0 .9.4.9.9.1.5-.3.9-.8.9M67.598 54.102h-32.2c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h32.1c.5 0 .9.4.9.9.1.5-.3.9-.8.9M67.598 61.502h-32.2c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h32.1c.5 0 .9.4.9.9.1.5-.3.9-.8.9M67.598 68.902h-32.2c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h32.1c.5 0 .9.4.9.9.1.5-.3.9-.8.9M67.598 76.302h-18c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h18c.5 0 .9.4.9.9s-.4.9-.9.9" mask="url(#b)"/>
+            <path fill="#FCD421" d="M65.298 38.902h-14.2c-2.1 0-3.8-1.7-3.8-3.8 0-2.1 1.7-3.8 3.8-3.8h14.2c2.1 0 3.8 1.7 3.8 3.8.1 2.1-1.6 3.8-3.8 3.8M37.998 31.302a3.8 3.8 0 1 1 .001 7.6 3.8 3.8 0 0 1 0-7.6" mask="url(#b)"/>
+            <path stroke="#685723" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5" d="M76.198 70.702v17.3h-47.7v-65h47.7v23.2" mask="url(#b)"/>
+            <path fill="#E0BA23" d="M61.598 69.202h35.9v-18.8h-35.9z" mask="url(#b)"/>
+            <path stroke="#685723" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5" d="M95.898 49.402v17.8h-35.7" mask="url(#b)"/>
+            <path fill="#FFF" d="M58.598 65.702h35.7v-17.8h-35.7z" mask="url(#b)"/>
+            <path stroke="#685723" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5" d="M58.598 65.702h35.7v-17.8h-35.7z" mask="url(#b)"/>
+            <path fill="#FCD421" d="M76.398 52.102a4.7 4.7 0 1 1 0 9.399 4.7 4.7 0 0 1 0-9.4" mask="url(#b)"/>
+            <path stroke="#FCD421" stroke-width=".692" d="M61.598 63.102h29.6v-12.7h-29.6z" mask="url(#b)"/>
+            <path fill="#FFF" d="M70.898 33.402v-2.4l-7.1 5 7.1 4.9v-2.5s8.8-1.4 13.7 7c0 0 0-12.5-13.7-12" mask="url(#b)"/>
+            <path stroke="#685723" stroke-linecap="round" stroke-linejoin="round" stroke-width=".659" d="M70.898 33.402v-2.4l-7.1 5 7.1 4.9v-2.5s8.8-1.4 13.7 7c0 0 0-12.5-13.7-12z" mask="url(#b)"/>
+        </g>
+    </g>
+</svg>

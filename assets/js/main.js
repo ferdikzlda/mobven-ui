@@ -6,7 +6,6 @@ $(function () {
         $(e.target.dataset.btn).removeClass('active');
       }else{
         $(e.target.dataset.btn).addClass('active');
-        debugger;
       }
     });
     $('#daskSearch').on('click',(e)=>{
