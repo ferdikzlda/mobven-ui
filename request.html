@@ -189,8 +189,8 @@
                             </div>
                             <div class="row m-b-16">
                                 <div class="col-md-12">
-                                    <div class="custom-input-group">
-                                        <div class="md-input md-textarea">
+                                    <div class="custom-input-group md-textarea-group">
+                                        <div class="md-input">
                                             <textarea rows="4" data-btn="#addressSave"
                                                 class="md-form-control search-input custom-textarea" required=""
                                                 type="text"></textarea>
@@ -305,7 +305,8 @@
                         </h1>
                         <div class="row">
                             <div class="col-md-4 col-md-offset-4">
-                                <button type="button" class="disable-btn active" data-toggle="modal" data-target="#myModal">OKU VE ONAYLA</button>
+                                <button type="button" class="disable-btn active" data-toggle="modal"
+                                    data-target="#contractModal">OKU VE ONAYLA</button>
                             </div>
                         </div>
                         <div class="selected-contract">
@@ -324,27 +325,160 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="selected-contract">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="assets/img/contract.png" />
+                                </div>
+                                <div class="col-md-9">
+                                    <span class="signature-description">
+                                        Onayladığınız sözleşmeye ait belgeleriniz, başvuru talebinizi tamamladığınız
+                                        anda e-posta adresinize gönderilecektir. Sözleşmeye <a class="gray-link"
+                                            href='#'>buradan</a> ulaşabilirsiniz.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8 p-r-0">
+                                    <div class="custom-input-group">
+                                        <div class="md-input">
+                                            <input data-btn="#changeMail" class="md-form-control search-input" required="" type="text">
+                                            <label>E-Posta Adresi</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <button id="changeMail" type="button" class="disable-btn">DEĞİŞTİR</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="form-post-section">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+                                <button type="button" class="yellow-btn">BAŞVURU TALEBİNİ TAMAMLA</button>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <!-- Contract Modal -->
+    <div class="modal fade" id="contractModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                </div>
                 <div class="modal-body">
-                    ...
+                    <span class="modal-close" data-dismiss="modal" aria-label="Close"></span>
+                    <img src="assets/img/logo.svg">
+                    <h4 class="modal-title">Perakende Satış Sözleşmesi</h4>
+                    <div class="modal-section-line"></div>
+                    <div class="model-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius nisi vel nibh fermentum,
+                        in aliquam nibh pellentesque. Pellentesque at justo in mi condimentum lobortis. Mauris rhoncus
+                        ante ac diam gravida scelerisque. Vestibulum consectetur tincidunt magna, nec sagittis enim
+                        tincidunt quis. Praesent eu neque ut lacus mattis blandit. Cras sed vestibulum velit.
+                        Pellentesque convallis leo ut ipsum ultrices laoreet sed sit amet risus. Praesent et diam eget
+                        orci tincidunt placerat dictum sed elit. Nam aliquam lacinia ex ac facilisis.
+
+                        Morbi dapibus enim non mi convallis, eget faucibus est ullamcorper. Fusce in dui lobortis,
+                        vulputate magna vitae, congue justo. Maecenas sollicitudin eleifend arcu et venenatis. Vivamus a
+                        justo quis velit sagittis luctus. Donec viverra sit amet sem at convallis. Nam ornare augue vel
+                        lorem interdum interdum. Aliquam erat volutpat. Donec faucibus placerat est vitae pharetra. Orci
+                        varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+                        Etiam sit amet nibh malesuada, pellentesque velit in, elementum lacus. Cras vel elit eget diam
+                        eleifend pharetra sed in odio. Vestibulum sit amet diam lobortis est tincidunt feugiat. Cras
+                        pulvinar dolor non lectus consectetur tristique. Fusce sit amet ultrices mi. Etiam tempor dui
+                        justo, a commodo ligula maximus ac. Etiam dui neque, accumsan quis metus congue, facilisis
+                        ornare odio. Sed sit amet consectetur ipsum. Nulla sodales, nibh ac cursus luctus, ipsum lectus
+                        lobortis lorem, id vestibulum nisi dui ac lorem. Vivamus fermentum porttitor lectus, in placerat
+                        risus.
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum porttitor egestas.
+                        Nullam at eros sit amet mauris vehicula venenatis. Maecenas diam ipsum, tristique sit amet
+                        pharetra eu, fringilla et nibh. Sed a nisi ut metus ultricies laoreet non vel enim. Morbi
+                        pharetra lectus sit amet ultricies interdum. Pellentesque gravida interdum feugiat. Ut volutpat
+                        ut nibh sit amet placerat. Integer luctus, libero in tincidunt porta, nulla diam rhoncus nisi,
+                        eget varius quam tellus at sem. Nunc elementum convallis ipsum eu pellentesque. Nullam varius
+                        mauris sed ipsum tempus, in hendrerit est dictum. Curabitur vehicula varius finibus. Nunc sit
+                        amet lectus at elit semper tristique sit amet nec nisl.
+
+                        Maecenas a arcu suscipit, lacinia diam eget, scelerisque nisi. Maecenas in purus sagittis,
+                        tempus odio ut, pretium nibh. Nullam ut faucibus dolor. Ut bibendum magna at ligula ullamcorper,
+                        et bibendum tellus vulputate. Integer rhoncus pellentesque faucibus. Fusce cursus ipsum ut
+                        scelerisque luctus. Aenean quis porta lectus. Sed vehicula turpis dictum, bibendum velit quis,
+                        dapibus sem. Pellentesque nec ante metus.
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <button type="button" class="disable-btn active">OKUDUM VE ONAYLIYORUM</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- SMS Modal -->
+    <div class="modal fade" id="smsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-center">
+                <div class="modal-body">
+                    <span class="modal-close" data-dismiss="modal" aria-label="Close"></span>
+                    <img src="assets/img/sms.svg">
+                    <h4 class="action-title">Sms Onay Kodu</h4>
+                    <span class="signature-description">
+                        Sistemimizde kayıtlı <span class="bold-font">536 456 67 78</span> cep telefonu numaranıza gönderilen
+6 haneli onay kodunu giriniz.
+                    </span>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="custom-input-group sms-code-box">
+                                <div class="md-input">
+                                    <input data-btn="#smsConfirmBtn" class="md-form-control search-input" required="" type="text">
+                                    <label>SMS ONAY KODU</label>
+                                </div>
+                            </div>
+                            <span class="sms-timer">180 saniye kaldı.</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-2">
+                            <button type="button" class="secondary-btn border-none">YENİ KOD GÖNDER</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button id="smsConfirmBtn" type="button" class="disable-btn">ONAY</button>
+                        </div>
+                    </div>
                 </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Invoice Modal -->
+    <div class="modal fade" id="invoiceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-center">
+                <div class="modal-body">
+                    <span class="modal-close" data-dismiss="modal" aria-label="Close"></span>
+                    <img src="assets/img/sms.svg">
+                    <h4 class="action-title">E-Arşiv Fatura Onayı</h4>
+                    <span class="signature-description">
+                        Ücretsiz E-Arşiv Fatura seçimi yapmadınız. Emin misiniz?
+                    </span>
+                    
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-2">
+                            <button type="button" class="secondary-btn border-none">GERİ DÖN</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="button" class="disable-btn active">EMİNİM</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

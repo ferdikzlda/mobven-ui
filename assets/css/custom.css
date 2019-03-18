@@ -62,8 +62,8 @@
 
 .custom-input-group {
     width: 100%;
-    padding: 15px 15px 13px 15px;
-    ;
+    padding: 15px;
+    height: 56px;
     border-radius: 4px;
     border: solid 1px #e9e9e9;
     background-color: #ffffff;
@@ -82,11 +82,10 @@
     display: inline-block;
     font-family: Hind;
     font-size: 16px;
-    height: 24px;
     border: none;
 }
 
-.custom-input-group .md-input.md-textarea {
+.custom-input-group.md-textarea-group {
     height: auto;
 }
 
@@ -121,7 +120,6 @@
     border: none;
     box-shadow: none;
     width: 100%;
-    margin-top: 5px;
 }
 
 .md-input label {
@@ -142,7 +140,9 @@
     font-size: 14px;
     color: #7c86a2;
 }
-
+.md-input .md-form-control:focus, .md-input .md-form-control:valid{
+    margin-top: 7px;
+}
 .border-none {
     border: none!important;
 }
@@ -313,7 +313,7 @@
     margin: 0;
 }
 
-.subscription .description{
+.subscription .description {
     font-family: Hind;
     font-size: 14px;
     line-height: 1.57;
@@ -524,22 +524,26 @@
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-.label-description{
+
+.label-description {
     margin: 0;
     font-family: Hind;
     font-size: 14px;
     line-height: 1.57;
     color: #7c86a2;
 }
-.four-page .description{
+
+.four-page .description {
     margin-bottom: 20px;
 }
-.four-page-checkbox-frame{
+
+.four-page-checkbox-frame {
     padding-bottom: 28px;
     border-bottom: 1px solid #e5ebf0;
     margin-bottom: 40px;
 }
-.five-page-description{
+
+.five-page-description {
     text-align: left;
     font-family: Hind;
     font-size: 16px;
@@ -549,8 +553,124 @@
     border-bottom: 1px solid #e5ebf0;
     line-height: 1.5;
 }
-.selected-contract img{
+
+.selected-contract img {
     width: 64px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/circled-close-icon.svg');
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    background-image: url('../img/circled-close-icon-hover.svg')
+}
+
+.modal-body {
+    padding: 40px 96px;
+    text-align: center;
+}
+
+.modal-dialog {
+    width: 750px;
+}
+
+.modal-title {
+    font-family: Hind;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    margin-top: 15px;
+}
+
+.modal-section-line {
+    border-bottom: 1px solid #e5ebf0;
+    margin: 24px 0;
+}
+
+.model-content {
+    height: 400px;
+    overflow: scroll;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.yellow-btn {
+    border-radius: 4px;
+    background-color: #ffd522;
+    width: 100%;
+    height: 56px;
+    font-family: Hind;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    border: none;
+}
+
+.form-post-section {
+    padding: 24px 0;
+}
+
+.modal .signature-description {
+    text-align: center;
+    width: 430px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.modal .action-title {
+    font-family: Hind;
+    font-size: 28px;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+.sms-timer {
+    font-family: Hind;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 8px 0 32px 0;
+    display: block;
+}
+.sms-timer.error{
+    color: #ff3636;
+}
+.sms-code-box {
+    background-color: #e5ebf0;
+}
+.sms-code-box.active{
+    background-color: #fff;
+    border: solid 1px #e5ebf0;
+}
+.sms-code-box .md-input .md-form-control {
+    background-color: transparent;
+    text-align: center;
+}
+.sms-code-box .md-input .md-form-control{
+    font-family: Hind;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sms-code-box .md-input label {
+    color: #a9b3bb;
+    right: 0;
+}
+.sms-code-box .md-input .md-form-control:focus~label, .sms-code-box .md-input .md-form-control:valid~label {
+    display: none;
+}
+.sms-code-box .md-input .md-form-control:focus, .sms-code-box .md-input .md-form-control:valid{
+    margin-top: 0px;
 }
 .p-r-0 {
     padding-right: 0px!important;
