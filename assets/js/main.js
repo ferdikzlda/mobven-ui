@@ -32,8 +32,8 @@ $(function () {
       $('html, body').animate({
         scrollTop: $(e.target.dataset.showPage).offset().top
       }, 1000);
-      $(".pagination span:eq(0)").removeClass('active')
-      $(".pagination span:eq(1)").addClass('active')
+      $('.pagination span:eq(0)').removeClass('active')
+      $('.pagination span:eq(1)').addClass('active')
     }
     if (e.target.classList.value === 'disable-btn active' && e.currentTarget.textContent === 'DEĞİŞTİR') {
       $(e.target.dataset.hideIcon).addClass('show');
@@ -57,8 +57,8 @@ $(function () {
     $('html, body').animate({
       scrollTop: $(e.target.dataset.showPage).offset().top
     }, 1000);
-    $(".pagination span:eq(1)").removeClass('active');
-    $(".pagination span:eq(2)").addClass('active');
+    $('.pagination span:eq(1)').removeClass('active');
+    $('.pagination span:eq(2)').addClass('active');
   });
   $('#postRequest').on('click', (e) => {
     $('#hideSignatureSelected').addClass('hide');
@@ -103,8 +103,8 @@ $(function () {
     goToFourPage();
   });
   $('#communicationBtn').on('click', (e) => {
-    let invoiceSms = $('input[name="invoiceSms"]').is(':checked');
-    let invoiceEmail = $('input[name="invoiceEmail"]').is(':checked');
+    let invoiceSms = $('input[name="invoice-sms"]').is(':checked');
+    let invoiceEmail = $('input[name="invoice-email"]').is(':checked');
     if (invoiceSms || invoiceEmail) {
       goToFivePage();
     } else {
@@ -114,16 +114,16 @@ $(function () {
   $('#invoiceModalApprove').on('click', (e) => {
     goToFivePage();
   });
-  $('.communication-settings').on('click',(e)=>{
-    let checked=$(e.target).is(':checked');
+  $('.communication-settings').on('click', (e) => {
+    let checked = $(e.target).is(':checked');
     $(e.target.dataset.check).prop('checked', checked);
   })
-  $('#contractModalApprove').on('click',(e)=>{
+  $('#contractModalApprove').on('click', (e) => {
     $('#contractFirstView').addClass('hide');
     $('#contractSecondView').removeClass('hide');
     $('#contractModal').modal('hide');
   });
-  $('#showContractLink').on('click',(e)=>{
+  $('#showContractLink').on('click', (e) => {
     $('#contractModal').modal('show');
     $('#contractModalApprove').addClass('hide');
   });
@@ -131,16 +131,31 @@ $(function () {
     $('#changeMail').text('KAYDET');
     $('#formPostSection').addClass('hide');
   });
-  $('#changeMail').on('click',(e)=>{
-    if($('#changeMail').text() === 'DEĞİŞTİR') return false;
+  $('#changeMail').on('click', (e) => {
+    if ($('#changeMail').text() === 'DEĞİŞTİR') return false;
     $(e.target).text('DEĞİŞTİR');
     $('#contractCheckIcon').addClass('show');
     $(e.target).removeClass('active');
     $('#formPostSection').removeClass('hide')
   });
-  $('#smsConfirmBtn').on('click',(e)=>{
-    window.location.href='/Users/mustafasalici/Desktop/mobven-ui/result.html';
+  $('#smsConfirmBtn').on('click', (e) => {
+    if(e.target.classList.value === 'disable-btn active'){
+      $('#requestForm').submit();
+    }
+    e.preventDefault();
   });
+  $('#applicationComplete').on('click', (e) => {
+    if (formValidate()) {
+      $('#smsModal').modal('show');
+    } else {
+      alert('Lütfen değişiklikleri kaydediniz.');
+    }
+  })
+  $('#requestForm').on('submit',(e)=>{
+    console.log($('#requestForm').serializeArray());
+    window.location.href = 'result.html';
+    e.preventDefault();
+  })
 })
 
 const goToFourPage = () => {
@@ -149,8 +164,10 @@ const goToFourPage = () => {
   $('html, body').animate({
     scrollTop: $('#fourPage').offset().top
   }, 1000);
-  $(".pagination span:eq(2)").removeClass('active');
-  $(".pagination span:eq(3)").addClass('active');
+  if ($('.pagination span:eq(2)')[0].classList.value === "active") {
+    $('.pagination span:eq(2)').removeClass('active');
+    $('.pagination span:eq(3)').addClass('active');
+  }
 }
 
 const goToFivePage = () => {
@@ -163,6 +180,20 @@ const goToFivePage = () => {
   $('html, body').animate({
     scrollTop: $('#fivePage').offset().top
   }, 1000);
-  $(".pagination span:eq(3)").removeClass('active');
-  $(".pagination span:eq(4)").addClass('active');
+  $('.pagination span:eq(3)').removeClass('active');
+  $('.pagination span:eq(4)').addClass('active');
+}
+
+const formValidate = () => {
+  if(
+    $('#daskCheckIcon').is(':visible') &&
+    $('#securityDepositCheckIcon').is(':visible') &&
+    $('#signatureCheckIcon').is(':visible') &&
+    $('#communicationIcon').is(':visible') &&
+    $('#contractCheckIcon').is(':visible')
+  ){
+    return true;
+  }else{
+    return false;
+  }
 }

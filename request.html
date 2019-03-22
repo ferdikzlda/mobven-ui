@@ -12,422 +12,447 @@
 </head>
 
 <body>
+
     <div class="request-container">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <div id="alertBox" class="correct-box">
-                        <img class="correct-icon" src="assets/img/checkmark-icon.svg" />
-                        <div class="correct-description">Sorguladığınız tesisat numarası, Abonelik yaptırmak için
-                            uygundur.</div>
-                    </div>
-                    <div class="subscription">
-                        <div class="subscription-header">
-                            <span class="title">Abonelik Bilgileri</span>
-                            <span class="sub-title pull-right"><span class="thin-font">Sayın</span> Emre Balkanlı</span>
+                    <form id="requestForm">
+                        <div id="alertBox" class="correct-box">
+                            <img class="correct-icon" src="assets/img/checkmark-icon.svg" />
+                            <div class="correct-description">Sorguladığınız tesisat numarası, Abonelik yaptırmak için
+                                uygundur.</div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <h5 class="detail-item-label">Abonelik Tipi</h5>
-                                <h1 class="detail-item-value">Mesken</h1>
+                        <div class="subscription">
+                            <div class="subscription-header">
+                                <span class="title">Abonelik Bilgileri</span>
+                                <span class="sub-title pull-right"><span class="thin-font">Sayın</span> Emre
+                                    Balkanlı</span>
                             </div>
-                            <div class="col-md-4">
-                                <h5 class="detail-item-label">Tesisat Numarası</h5>
-                                <h1 class="detail-item-value">403030303</h1>
-                            </div>
-                            <div class="col-md-4">
-                                <h5 class="detail-item-label">Tarife Tipi</h5>
-                                <h1 class="detail-item-value">Tek Terim/Tek Zaman</h1>
-                            </div>
-                            <div class="col-md-12 m-t-24">
-                                <h5 class="detail-item-label">Adres</h5>
-                                <h1 class="detail-item-value">CEVİZLİK MAH. DENİZCİLER CAD. YEŞİL SOK. NO: 4/6 İSTANBUL
-                                </h1>
-                            </div>
-                        </div>
-                        <div class="section-line"></div>
-                        <h1 class="subscription-description">
-                            Abonelik işlemleri tek terim/tek zamanlı tarife üzerinden yapılmaktadır. Tek terim/çok
-                            zamanlı tarife için lütfen hizmet noktalarımıza başvurunuz.
-                        </h1>
-                    </div>
-                    <div id="onePage" class="subscription">
-                        <div class="subscription-header">
-                            <span class="yellow-circle-number">1</span>
-                            <span class="title">DASK Numarası</span>
-                            <img id="daskCheckIcon" class="check-icon" src="assets/img/circled-checkmark-icon.svg">
-                        </div>
-                        <div id="daskNumberImg" class="text-center p-t-b-15 dask-number">
-                            <img src="assets/img/dask-number.svg" />
-                        </div>
-                        <h1 id="daskDescription" class="dask-description">Sözleşme işlemlerine devam edebilmeniz için
-                            meskene ait DASK
-                            Numarası’nı girmeniz gerekmektedir. Aksi takdirde işleme devam edemeyeceksiniz.</h1>
-                        <div class="row">
-                            <div class="col-md-8 p-r-0">
-                                <div id="daskSearchBox" class="custom-input-group">
-                                    <div class="md-input">
-                                        <input data-btn="#daskSearch" data-hide-icon="#daskCheckIcon"
-                                            data-passive-btn="#daskBtn" class="md-form-control search-input"
-                                            required="" type="text">
-                                        <label>Dask Numarası</label>
-                                    </div>
-                                    <div class="custom-input-group-icon">
-                                        <img id="infoIcon" src="assets/img/info-icon.svg">
-                                        <img class="invoice-img" src="assets/img/dask-info.svg">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <button id="daskSearch" data-passive-btn="#daskBtn" data-hide-input-icon="#infoIcon"
-                                    data-show-page="#twoPage" data-hide-alert-box="#alertBox"
-                                    data-hide-img="#daskNumberImg" data-hide-icon="#daskCheckIcon"
-                                    data-hide-description="#daskDescription" type="button"
-                                    class="disable-btn">DEVAM</button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div id="twoPage" class="subscription hide">
-                        <div class="subscription-header">
-                            <span class="yellow-circle-number">2</span>
-                            <span class="title">Güvence Bedeli</span>
-                            <img id="securityDepositCheckIcon" class="check-icon" src="assets/img/circled-checkmark-icon.svg">
-                        </div>
-                        <div id="contractImg" class="text-center p-t-b-15 dask-number">
-                            <img src="assets/img/deposit-value.svg" />
-                        </div>
-                        <h1 id="contractDescription" class="dask-description">Görevli tedarik şirketi ile sözleşme
-                            imzalayan tüketicinin Güvence
-                            Bedeli, tesisin veya kullanım yerinin gücü dikkate alınarak, abone grupları itibariyle kW
-                            başına belirlenen birim bedel üzerinden hesaplanmaktadır.</h1>
-                        <div class="alert-box">
-                            <img class="alert-icon" src="./assets/img/alert-icon.svg" />
-                            <div class="alert-description"><span class="bold-font">180,00 TL</span> güvence bedeli
-                                tutarı eşit <span class="bold-font">iki taksit</span> halinde <span
-                                    class="bold-font">ilk ve ikinci</span>ilk ve ikinci faturanıza yansıtılacaktır.
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-4">
-                                <button id="securityDepositBtn" data-show-page="#threePage" data-hide-icon="#securityDepositCheckIcon"
-                                    data-hide-description="#contractDescription" data-hide-img="#contractImg"
-                                    type="button" class="disable-btn active">DEVAM</button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div id="threePage" class="subscription hide">
-                        <div class="subscription-header">
-                            <span class="yellow-circle-number">3</span>
-                            <span class="title">İmza Yönetimi</span>
-                            <img id="signatureCheckIcon" class="check-icon" src="assets/img/circled-checkmark-icon.svg">
-                        </div>
-                        <div id="hideSignatureSelected">
-                            <div id="daskNumberImg" class="text-center p-t-b-15 dask-number">
-                                <img src="assets/img/signature.svg" />
-                            </div>
-                            <h1 class="dask-description">Abonelik sözleşmesi mutlaka ıslak imza ile tamamlanmalıdır.
-                                Başvurunuz sonrası kurye veya hizmet noktalarımızdan randevu alarak ilgili sözleşmeyi
-                                tamamlayabilirsin.</h1>
-                            <div class="section-line"></div>
-
-                            <h1 class="signature-sub-title">İmza yönteminizi seçin.</h1>
                             <div class="row">
-                                <div class="col-md-6">
-                                    <div id="postRequest" class="signature-item">
-                                        <img src="assets/img/courier.svg" />
-                                        <h1 class="signature-sub-title">Kurye Gelsin</h1>
-                                        <span class="signature-description text-center">
-                                            24 saat içinde sizinle iletişime geçilecektir. Teslimi sadece başvuru sahibi
-                                            yapabilir. Kurye bedeli* ilk faturanıza yansıtılacaktır.
-                                            * Ayesaş 10,84 TL, Başkent ve Toroslar 11,41TL
-                                        </span>
+                                <div class="col-md-4">
+                                    <h5 class="detail-item-label">Abonelik Tipi</h5>
+                                    <h1 class="detail-item-value">Mesken</h1>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="detail-item-label">Tesisat Numarası</h5>
+                                    <h1 class="detail-item-value">403030303</h1>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="detail-item-label">Tarife Tipi</h5>
+                                    <h1 class="detail-item-value">Tek Terim/Tek Zaman</h1>
+                                </div>
+                                <div class="col-md-12 m-t-24">
+                                    <h5 class="detail-item-label">Adres</h5>
+                                    <h1 class="detail-item-value">CEVİZLİK MAH. DENİZCİLER CAD. YEŞİL SOK. NO: 4/6
+                                        İSTANBUL
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="section-line"></div>
+                            <h1 class="subscription-description">
+                                Abonelik işlemleri tek terim/tek zamanlı tarife üzerinden yapılmaktadır. Tek terim/çok
+                                zamanlı tarife için lütfen hizmet noktalarımıza başvurunuz.
+                            </h1>
+                        </div>
+                        <div id="onePage" class="subscription">
+                            <div class="subscription-header">
+                                <span class="yellow-circle-number">1</span>
+                                <span class="title">DASK Numarası</span>
+                                <img id="daskCheckIcon" class="check-icon" src="assets/img/circled-checkmark-icon.svg">
+                            </div>
+                            <div id="daskNumberImg" class="text-center p-t-b-15 dask-number">
+                                <img src="assets/img/dask-number.svg" />
+                            </div>
+                            <h1 id="daskDescription" class="dask-description">Sözleşme işlemlerine devam edebilmeniz
+                                için
+                                meskene ait DASK
+                                Numarası’nı girmeniz gerekmektedir. Aksi takdirde işleme devam edemeyeceksiniz.</h1>
+                            <div class="row">
+                                <div class="col-md-8 p-r-0">
+                                    <div id="daskSearchBox" class="custom-input-group">
+                                        <div class="md-input">
+                                            <input name="dask-number" data-btn="#daskSearch" data-hide-icon="#daskCheckIcon"
+                                                data-passive-btn="#daskBtn" class="md-form-control search-input"
+                                                required="" type="text">
+                                            <label>Dask Numarası</label>
+                                        </div>
+                                        <div class="custom-input-group-icon">
+                                            <img id="infoIcon" src="assets/img/info-icon.svg">
+                                            <img class="invoice-img" src="assets/img/dask-info.svg">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div id="appointmentRequest" class="signature-item">
+                                <div class="col-md-4">
+                                    <button id="daskSearch" data-passive-btn="#daskBtn" data-hide-input-icon="#infoIcon"
+                                        data-show-page="#twoPage" data-hide-alert-box="#alertBox"
+                                        data-hide-img="#daskNumberImg" data-hide-icon="#daskCheckIcon"
+                                        data-hide-description="#daskDescription" type="button"
+                                        class="disable-btn">DEVAM</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="twoPage" class="subscription hide">
+                            <div class="subscription-header">
+                                <span class="yellow-circle-number">2</span>
+                                <span class="title">Güvence Bedeli</span>
+                                <img id="securityDepositCheckIcon" class="check-icon"
+                                    src="assets/img/circled-checkmark-icon.svg">
+                            </div>
+                            <div id="contractImg" class="text-center p-t-b-15 dask-number">
+                                <img src="assets/img/deposit-value.svg" />
+                            </div>
+                            <h1 id="contractDescription" class="dask-description">Görevli tedarik şirketi ile sözleşme
+                                imzalayan tüketicinin Güvence
+                                Bedeli, tesisin veya kullanım yerinin gücü dikkate alınarak, abone grupları itibariyle
+                                kW
+                                başına belirlenen birim bedel üzerinden hesaplanmaktadır.</h1>
+                            <div class="alert-box">
+                                <img class="alert-icon" src="./assets/img/alert-icon.svg" />
+                                <div class="alert-description"><span class="bold-font">180,00 TL</span> güvence bedeli
+                                    tutarı eşit <span class="bold-font">iki taksit</span> halinde <span
+                                        class="bold-font">ilk ve ikinci</span>ilk ve ikinci faturanıza yansıtılacaktır.
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-4">
+                                    <button id="securityDepositBtn" data-show-page="#threePage"
+                                        data-hide-icon="#securityDepositCheckIcon"
+                                        data-hide-description="#contractDescription" data-hide-img="#contractImg"
+                                        type="button" class="disable-btn active">DEVAM</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="threePage" class="subscription hide">
+                            <div class="subscription-header">
+                                <span class="yellow-circle-number">3</span>
+                                <span class="title">İmza Yönetimi</span>
+                                <img id="signatureCheckIcon" class="check-icon"
+                                    src="assets/img/circled-checkmark-icon.svg">
+                            </div>
+                            <div id="hideSignatureSelected">
+                                <div id="daskNumberImg" class="text-center p-t-b-15 dask-number">
+                                    <img src="assets/img/signature.svg" />
+                                </div>
+                                <h1 class="dask-description">Abonelik sözleşmesi mutlaka ıslak imza ile tamamlanmalıdır.
+                                    Başvurunuz sonrası kurye veya hizmet noktalarımızdan randevu alarak ilgili
+                                    sözleşmeyi
+                                    tamamlayabilirsin.</h1>
+                                <div class="section-line"></div>
+
+                                <h1 class="signature-sub-title">İmza yönteminizi seçin.</h1>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div id="postRequest" class="signature-item">
+                                            <img src="assets/img/courier.svg" />
+                                            <h1 class="signature-sub-title">Kurye Gelsin</h1>
+                                            <span class="signature-description text-center">
+                                                24 saat içinde sizinle iletişime geçilecektir. Teslimi sadece başvuru
+                                                sahibi
+                                                yapabilir. Kurye bedeli* ilk faturanıza yansıtılacaktır.
+                                                * Ayesaş 10,84 TL, Başkent ve Toroslar 11,41TL
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div id="appointmentRequest" class="signature-item">
+                                            <img src="assets/img/appointment.svg" />
+                                            <h1 class="signature-sub-title">Randevu Alacağım</h1>
+                                            <span class="signature-description text-center">
+                                                Sözleşmenin ıslak imza işlemi başvuru sahibi tarafından 5 iş günü içinde
+                                                tamamlanmalıdır. İşlemin sonunda randevu alabileceğiniz sayfaya
+                                                yönlendirileceksiniz.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="selected-signature">
+                                <div id="postRequestResult" class="hide">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="assets/img/courier.svg" />
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h1 class="signature-sub-title approved-text">Kurye Gelsin</h1>
+                                            <span class="signature-description m-b-16">
+                                                <span class="bold-font">24 saat</span> içinde sizinle iletişime
+                                                geçilecektir.
+                                                Teslimi sadece <span class="bold-font">başvuru sahibi</span> yapabilir.
+                                                Kurye
+                                                bedeli* ilk faturanıza yansıtılacaktır.
+                                            </span>
+                                            <span class="signature-description">
+                                                * Ayesaş 10,84 TL, Başkent ve Toroslar 11,41TL
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="section-line"></div>
+                                    <div id="hideAddressBoxSelected">
+                                        <h1 class="signature-sub-title">Kuryenin imza için geleceği adresi belirleyin.
+                                        </h1>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div id="addressBoxSelected" class="address-box">
+                                                    <h1>Kuryenin Geleceği Adres</h1>
+                                                    <span id="addressValue2">BARBAROS MAH. ARDIÇ SOK. NO: 5 M/21 MERKEZ
+                                                        ATAŞEHİR İSTANBUL</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div id="changeAddressSelected" class="address-box text-center">
+                                                    <h1 class="address-box-btn">ADRESİ DEĞİŞTİR</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="addressBoxSelectedResult" class="hide">
+                                        <h1 class="signature-sub-title">Sözleşmenin Yapılacağı Adres</h1>
+                                        <h2 id="addressValue" class="address-text">BARBAROS MAH. ARDIÇ SOK. NO: 5 M/21
+                                            MERKEZ ATAŞEHİR İSTANBUL</h2>
+                                        <div class="row">
+                                            <div class="col-md-4 col-md-offset-4">
+                                                <button id="changeAddressBtn" type="button" class="secondary-btn">ADRESİ
+                                                    DEĞİŞTİR</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div id="changeAddressForm" class="hide">
+                                    <h1 class="signature-sub-title">Kuryenin imza için geleceği adresi belirleyin.</h1>
+                                    <div class="row m-b-16">
+                                        <div class="col-md-12">
+                                            <div class="custom-input-group md-textarea-group">
+                                                <div class="md-input">
+                                                    <textarea id="addressFormValue" name="address" rows="4" data-btn="#addressSave"
+                                                        class="md-form-control search-input custom-textarea" required=""
+                                                        type="text"></textarea>
+                                                    <label>Adres</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-2">
+                                            <button id="addressChangeGiveUp" type="button"
+                                                class="secondary-btn border-none">VAZGEÇ</button>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <button id="addressSave" type="button" class="disable-btn">KAYDET</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="appointmentRequestResult" class="selected-signature hide">
+                                <div class="row">
+                                    <div class="col-md-2">
                                         <img src="assets/img/appointment.svg" />
-                                        <h1 class="signature-sub-title">Randevu Alacağım</h1>
-                                        <span class="signature-description text-center">
-                                            Sözleşmenin ıslak imza işlemi başvuru sahibi tarafından 5 iş günü içinde
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h1 class="signature-sub-title approved-text">Randevu Alacağım</h1>
+                                        <span class="signature-description m-b-16">
+                                            Sözleşmenin ıslak imza işlemi <span class="bold-font">başvuru sahibi</span>
+                                            tarafından <span class="bold-font">5 iş günü</span> içinde
                                             tamamlanmalıdır. İşlemin sonunda randevu alabileceğiniz sayfaya
                                             yönlendirileceksiniz.
                                         </span>
                                     </div>
                                 </div>
+                                <div id="appointmentContinueLine" class="section-line"></div>
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-4 m-t-24">
+                                        <button id="appointmentContinueBtn" type="button"
+                                            class="disable-btn active">DEVAM</button>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
+                        <div id="fourPage" class="subscription hide four-page">
+                            <div class="subscription-header">
+                                <span class="yellow-circle-number">4</span>
+                                <span class="title">İletişim Ayarları</span>
+                                <img id="communicationIcon" class="check-icon"
+                                    src="assets/img/circled-checkmark-icon.svg">
+                            </div>
+                            <div id="communicationImg" class="text-center p-t-b-15 dask-number">
+                                <img src="assets/img/communication-settings.svg" />
+                            </div>
+                            <div id="activeCheckboxes">
+                                <div class="four-page-checkbox-frame">
+                                    <label class="checkbox-container">KVKK Onayı
+                                        <input class="communication-settings" data-check="#kvkCheckBox" type="checkbox">
+                                        <span class="checkmark"></span>
+                                        <h1 class="label-description">Enerjisa olarak kişisel verilerinizi koruyoruz.
+                                            Hizmet
+                                            kalitemizin
+                                            artırılması ve sizlere daha uygun ürün/hizmetler sunabilmemiz için 6698
+                                            sayılı
+                                            Kişisel
+                                            Verilerin Korunması Kanunu ve ilgili mevzuatı uyarınca verilerinizi
+                                            işlememiz
+                                            ve/veya 3.
+                                            kişilerle paylaşmamızın gerekmesi durumu için kişisel veri onaylarını
+                                            almamız
+                                            gerekmektedir.
+                                        </h1>
+                                    </label>
+                                    <h1 class="sub-title m-t-24">Kampanya Bildirimleri</h1>
+                                    <h2 class="description">Size özel pazarlama aktivitelerimizin, yeni ürün ve
+                                        avantajlarımızın,
+                                        kampanyalarımızın SMS veya e-posta yoluyla paylaşılmasıdır.</h2>
+                                    <label class="checkbox-container">SMS
+                                        <input class="communication-settings" data-check="#campaignSmsCheckBox"
+                                            type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-container">E-Posta
+                                        <input class="communication-settings" data-check="#campaignEmailCheckBox"
+                                            type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <h1 class="sub-title m-t-24">Fatura bilgilerinizden nasıl haber almak istersiniz?
+                                    </h1>
+                                    <h2 class="description">Dilediğiniz zaman ulaşabilmeniz ve arşivleyebilmeniz için
+                                        faturanızın
+                                        SMS veya e-posta yoluyla gönderilmesidir. E-arşiv fatura hizmeti ücretsizdir.
+                                    </h2>
+                                    <label class="checkbox-container">SMS
+                                        <input class="communication-settings" data-check="#invoiceSmsCheckBox"
+                                             type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-container">E-Posta
+                                        <input class="communication-settings" data-check="#invoiceEmailCheckBox"
+                                             type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-4">
+                                        <button id="communicationBtn" type="button"
+                                            class="disable-btn active">DEVAM</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="selectedCheckboxes" class="hide">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="checkbox-container">KVKK Onayı
+                                            <input name="kvk" id="kvkCheckBox" type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <h1 class="sub-title m-t-24 m-b-16">Kampanya Bildirimleri</h1>
 
+                                        <label class="checkbox-container">SMS
+                                            <input name="campaign-sms" id="campaignSmsCheckBox" type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="checkbox-container">E-Posta
+                                            <input name="campaign-email" id="campaignEmailCheckBox" type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h1 class="sub-title m-b-16">E-Arşiv Fatura Onayı</h1>
 
-                        <div class="selected-signature">
-                            <div id="postRequestResult" class="hide">
+                                        <label class="checkbox-container">SMS
+                                            <input name="invoice-sms" id="invoiceSmsCheckBox" name="invoiceSms" type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="checkbox-container">E-Posta
+                                            <input name="invoice-email" id="invoiceEmailCheckBox" name="invoiceEmail" type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="fivePage" class="subscription hide five-page">
+                            <div class="subscription-header">
+                                <span class="yellow-circle-number">5</span>
+                                <span class="title">Sözleşme</span>
+                                <img id="contractCheckIcon" class="check-icon"
+                                    src="assets/img/circled-checkmark-icon.svg">
+                            </div>
+                            <div id="contractFirstView">
+                                <div id="daskNumberImg" class="text-center p-t-b-15 dask-number">
+                                    <img src="assets/img/contract.png" />
+                                </div>
+                                <h1 class="five-page-description">
+                                    Sayın <span class="bold-font">Emre Balkanlı,</span><br>Başvurunuzu tamamlamak için
+                                    lütfen
+                                    <span class="bold-font">Perakende Satış Sözleşmesi</span>’ni
+                                    okuyup onaylayınız.
+                                </h1>
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-4">
+                                        <button type="button" class="disable-btn active" data-toggle="modal"
+                                            data-target="#contractModal">OKU VE ONAYLA</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="selected-contract hide">
                                 <div class="row">
                                     <div class="col-md-2">
-                                        <img src="assets/img/courier.svg" />
+                                        <img src="assets/img/contract.png" />
                                     </div>
                                     <div class="col-md-10">
-                                        <h1 class="signature-sub-title approved-text">Kurye Gelsin</h1>
-                                        <span class="signature-description m-b-16">
-                                            <span class="bold-font">24 saat</span> içinde sizinle iletişime
-                                            geçilecektir.
-                                            Teslimi sadece <span class="bold-font">başvuru sahibi</span> yapabilir.
-                                            Kurye
-                                            bedeli* ilk faturanıza yansıtılacaktır.
-                                        </span>
                                         <span class="signature-description">
-                                            * Ayesaş 10,84 TL, Başkent ve Toroslar 11,41TL
+                                            Onayladığınız sözleşme, başvuru talebinizi tamamladığınız anda <span
+                                                class="bold-font">emre@balkanli.com</span>
+                                            adresinize PDF formatında e-posta olarak gönderilecektir. Sözleşmeye <a
+                                                class="gray-link" href='#'>buradan</a>
+                                            ulaşabilirsiniz.
                                         </span>
                                     </div>
                                 </div>
-                                <div class="section-line"></div>
-                                <div id="hideAddressBoxSelected">
-                                    <h1 class="signature-sub-title">Kuryenin imza için geleceği adresi belirleyin.</h1>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div id="addressBoxSelected" class="address-box">
-                                                <h1>Kuryenin Geleceği Adres</h1>
-                                                <span id="addressValue2">BARBAROS MAH. ARDIÇ SOK. NO: 5 M/21 MERKEZ
-                                                    ATAŞEHİR İSTANBUL</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div id="changeAddressSelected" class="address-box text-center">
-                                                <h1 class="address-box-btn">ADRESİ DEĞİŞTİR</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="addressBoxSelectedResult" class="hide">
-                                    <h1 class="signature-sub-title">Sözleşmenin Yapılacağı Adres</h1>
-                                    <h2 id="addressValue" class="address-text">BARBAROS MAH. ARDIÇ SOK. NO: 5 M/21
-                                        MERKEZ ATAŞEHİR İSTANBUL</h2>
-                                    <div class="row">
-                                        <div class="col-md-4 col-md-offset-4">
-                                            <button id="changeAddressBtn" type="button" class="secondary-btn">ADRESİ
-                                                DEĞİŞTİR</button>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
-                            <div id="changeAddressForm" class="hide">
-                                <h1 class="signature-sub-title">Kuryenin imza için geleceği adresi belirleyin.</h1>
-                                <div class="row m-b-16">
-                                    <div class="col-md-12">
-                                        <div class="custom-input-group md-textarea-group">
-                                            <div class="md-input">
-                                                <textarea id="addressFormValue" rows="4" data-btn="#addressSave"
-                                                    class="md-form-control search-input custom-textarea" required=""
-                                                    type="text"></textarea>
-                                                <label>Adres</label>
-                                            </div>
-                                        </div>
+                            <div id="contractSecondView" class="selected-contract hide">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <img src="assets/img/contract.png" />
+                                    </div>
+                                    <div class="col-md-9">
+                                        <span class="signature-description">
+                                            Onayladığınız sözleşmeye ait belgeleriniz, başvuru talebinizi tamamladığınız
+                                            anda e-posta adresinize gönderilecektir. Sözleşmeye <span
+                                                id="showContractLink" class="gray-link">buradan</span> ulaşabilirsiniz.
+                                        </span>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-4 col-md-offset-2">
-                                        <button id="addressChangeGiveUp" type="button"
-                                            class="secondary-btn border-none">VAZGEÇ</button>
+                                <div class="row m-t-40">
+                                    <div class="col-md-8 p-r-0">
+                                        <div id="contractSearchBox" class="custom-input-group">
+                                            <div class="md-input">
+                                                <input name="contract-email" data-btn="#changeMail" class="md-form-control search-input"
+                                                    required="" type="text">
+                                                <label>E-Posta Adresi</label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <button id="addressSave" type="button" class="disable-btn">KAYDET</button>
+                                        <button id="changeMail" type="button" class="disable-btn">DEĞİŞTİR</button>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                        <div id="appointmentRequestResult" class="selected-signature hide">
+                        <div id="formPostSection" class="form-post-section hide">
                             <div class="row">
-                                <div class="col-md-2">
-                                    <img src="assets/img/appointment.svg" />
-                                </div>
-                                <div class="col-md-10">
-                                    <h1 class="signature-sub-title approved-text">Randevu Alacağım</h1>
-                                    <span class="signature-description m-b-16">
-                                        Sözleşmenin ıslak imza işlemi <span class="bold-font">başvuru sahibi</span>
-                                        tarafından <span class="bold-font">5 iş günü</span> içinde
-                                        tamamlanmalıdır. İşlemin sonunda randevu alabileceğiniz sayfaya
-                                        yönlendirileceksiniz.
-                                    </span>
-                                </div>
-                            </div>
-                            <div id="appointmentContinueLine" class="section-line"></div>
-                            <div class="row">
-                                <div class="col-md-4 col-md-offset-4 m-t-24">
-                                    <button id="appointmentContinueBtn" type="button"
-                                        class="disable-btn active">DEVAM</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div id="fourPage" class="subscription hide four-page">
-                        <div class="subscription-header">
-                            <span class="yellow-circle-number">4</span>
-                            <span class="title">İletişim Ayarları</span>
-                            <img id="communicationIcon" class="check-icon" src="assets/img/circled-checkmark-icon.svg">
-                        </div>
-                        <div id="communicationImg" class="text-center p-t-b-15 dask-number">
-                            <img src="assets/img/communication-settings.svg" />
-                        </div>
-                        <div id="activeCheckboxes">
-                            <div class="four-page-checkbox-frame">
-                                <label class="checkbox-container">KVKK Onayı
-                                    <input class="communication-settings" data-check="#kvkCheckBox" type="checkbox">
-                                    <span class="checkmark"></span>
-                                    <h1 class="label-description">Enerjisa olarak kişisel verilerinizi koruyoruz. Hizmet
-                                        kalitemizin
-                                        artırılması ve sizlere daha uygun ürün/hizmetler sunabilmemiz için 6698 sayılı
-                                        Kişisel
-                                        Verilerin Korunması Kanunu ve ilgili mevzuatı uyarınca verilerinizi işlememiz
-                                        ve/veya 3.
-                                        kişilerle paylaşmamızın gerekmesi durumu için kişisel veri onaylarını almamız
-                                        gerekmektedir.
-                                    </h1>
-                                </label>
-                                <h1 class="sub-title m-t-24">Kampanya Bildirimleri</h1>
-                                <h2 class="description">Size özel pazarlama aktivitelerimizin, yeni ürün ve
-                                    avantajlarımızın,
-                                    kampanyalarımızın SMS veya e-posta yoluyla paylaşılmasıdır.</h2>
-                                <label class="checkbox-container">SMS
-                                    <input class="communication-settings" data-check="#campaignSmsCheckBox" type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="checkbox-container">E-Posta
-                                    <input class="communication-settings" data-check="#campaignEmailCheckBox" type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <h1 class="sub-title m-t-24">Fatura bilgilerinizden nasıl haber almak istersiniz?</h1>
-                                <h2 class="description">Dilediğiniz zaman ulaşabilmeniz ve arşivleyebilmeniz için
-                                    faturanızın
-                                    SMS veya e-posta yoluyla gönderilmesidir. E-arşiv fatura hizmeti ücretsizdir.</h2>
-                                <label class="checkbox-container">SMS
-                                    <input class="communication-settings" data-check="#invoiceSmsCheckBox" name="invoiceSms" type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="checkbox-container">E-Posta
-                                    <input class="communication-settings" data-check="#invoiceSmsCheckBox" name="invoiceEmail" type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4 col-md-offset-4">
-                                    <button id="communicationBtn" type="button"
-                                        class="disable-btn active">DEVAM</button>
+                                <div class="col-md-6 col-md-offset-3">
+                                    <button id="applicationComplete" type="button" class="yellow-btn">BAŞVURU TALEBİNİ
+                                        TAMAMLA</button>
                                 </div>
                             </div>
                         </div>
-                        <div id="selectedCheckboxes" class="hide">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label class="checkbox-container">KVKK Onayı
-                                        <input id="kvkCheckBox" type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <h1 class="sub-title m-t-24 m-b-16">Kampanya Bildirimleri</h1>
-
-                                    <label class="checkbox-container">SMS
-                                        <input id="campaignSmsCheckBox" type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-container">E-Posta
-                                        <input id="campaignEmailCheckBox" type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="col-md-6">
-                                    <h1 class="sub-title m-b-16">E-Arşiv Fatura Onayı</h1>
-
-                                    <label class="checkbox-container">SMS
-                                        <input id="invoiceSmsCheckBox" name="invoiceSms" type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-container">E-Posta
-                                        <input id="invoiceSmsCheckBox" name="invoiceEmail" type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="fivePage" class="subscription hide five-page">
-                        <div class="subscription-header">
-                            <span class="yellow-circle-number">5</span>
-                            <span class="title">Sözleşme</span>
-                            <img id="contractCheckIcon" class="check-icon" src="assets/img/circled-checkmark-icon.svg">
-                        </div>
-                        <div id="contractFirstView">
-                            <div id="daskNumberImg" class="text-center p-t-b-15 dask-number">
-                                <img src="assets/img/contract.png" />
-                            </div>
-                            <h1 class="five-page-description">
-                                Sayın <span class="bold-font">Emre Balkanlı,</span><br>Başvurunuzu tamamlamak için
-                                lütfen
-                                <span class="bold-font">Perakende Satış Sözleşmesi</span>’ni
-                                okuyup onaylayınız.
-                            </h1>
-                            <div class="row">
-                                <div class="col-md-4 col-md-offset-4">
-                                    <button type="button" class="disable-btn active" data-toggle="modal"
-                                        data-target="#contractModal">OKU VE ONAYLA</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="selected-contract hide">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <img src="assets/img/contract.png" />
-                                </div>
-                                <div class="col-md-10">
-                                    <span class="signature-description">
-                                        Onayladığınız sözleşme, başvuru talebinizi tamamladığınız anda <span
-                                            class="bold-font">emre@balkanli.com</span>
-                                        adresinize PDF formatında e-posta olarak gönderilecektir. Sözleşmeye <a
-                                            class="gray-link" href='#'>buradan</a>
-                                        ulaşabilirsiniz.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="contractSecondView" class="selected-contract hide">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <img src="assets/img/contract.png" />
-                                </div>
-                                <div class="col-md-9">
-                                    <span class="signature-description">
-                                        Onayladığınız sözleşmeye ait belgeleriniz, başvuru talebinizi tamamladığınız
-                                        anda e-posta adresinize gönderilecektir. Sözleşmeye <span id="showContractLink"
-                                            class="gray-link">buradan</span> ulaşabilirsiniz.
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="row m-t-40">
-                                <div class="col-md-8 p-r-0">
-                                    <div id="contractSearchBox" class="custom-input-group">
-                                        <div class="md-input">
-                                            <input data-btn="#changeMail" class="md-form-control search-input"
-                                                required="" type="text">
-                                            <label>E-Posta Adresi</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <button id="changeMail" type="button" class="disable-btn">DEĞİŞTİR</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="formPostSection" class="form-post-section hide">
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3">
-                                <button data-toggle="modal" data-target="#smsModal" type="button" class="yellow-btn">BAŞVURU TALEBİNİ TAMAMLA</button>
-                            </div>
-                        </div>
-                    </div>
-
+                    </form>
                 </div>
             </div>
         </div>
